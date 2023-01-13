@@ -1,0 +1,139 @@
+{
+	"info": {
+		"_postman_id": "d032040c-917a-48cd-8c73-1932812e29c5",
+		"name": "integration",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "15523036"
+	},
+	"item": [
+		{
+			"name": "auth",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "api_key",
+							"value": "ZXlKMGVYQWlPaUpLVjFRaUxDSmhiR2NpT2lKSVV6VXhNaUo5LmV5SmpiR0Z6Y3lJNklrMWxjbU5vWVc1MElpd2ljSEp2Wm1sc1pWOXdheUk2Tmpjd09UTTBMQ0p1WVcxbElqb2lNVFkzTXpRNE1EY3pNQzQwT1RreE9URWlmUS5JdGFYODUzbFA4dVpOcFl2T1JFWUcyRWgtWHFId1k3NHVEREN4N3ZoaG94ZzB3cXNjWkp4YnJuck50WHpnY1U5enMwaU9QNU92SXJZZE85X3llLXV3QQ==",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/payment",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"payment"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "makeOrderPaymob",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "token",
+							"value": "ZXlKaGJHY2lPaUpJVXpVeE1pSXNJblI1Y0NJNklrcFhWQ0o5LmV5SmxlSEFpT2pFMk56TTJNekkxTXpNc0luQnliMlpwYkdWZmNHc2lPalkzTURrek5Dd2ljR2hoYzJnaU9pSTRaVFV3TVdZeU9XRmhZbVJsTW1WaU5EQTBPR1ZrTUdaak1XVmxZVEkzTXprM1pUUXlZVGcyTURJeE9UVXdNalJsWVdFeE1tTTRZbUZoTURRMllUWmxJaXdpWTJ4aGMzTWlPaUpOWlhKamFHRnVkQ0o5LldYQ3M1dEp5ZG13NW9GX3BHR3FucjRjZ29EbUFiYUZJMExLYUxMcnRrV3pSclozaUJtLUFiQjNDZ2RxVGw0b2F3ZFIyRW5uUU9RWFYzM0xRUGdySmRn",
+							"type": "text"
+						},
+						{
+							"key": "merchant_id",
+							"value": "28",
+							"type": "text"
+						},
+						{
+							"key": "amount_cents",
+							"value": "100",
+							"type": "text"
+						},
+						{
+							"key": "merchant_order_id",
+							"value": "null",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/makeOrderPaymob",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"makeOrderPaymob"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getPaymentKeyPaymob",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "token",
+							"value": "LRR2QzQrcXVhdmdtTFJFRm9zQmF5T3U1dz09X3NDNXpJMXFNdmtXT1hsOHVKZ1gwZmc9PQ",
+							"type": "text"
+						},
+						{
+							"key": "integration_id",
+							"value": "93562425",
+							"type": "text"
+						},
+						{
+							"key": "amount_cents",
+							"value": "100",
+							"type": "text"
+						},
+						{
+							"key": "order_id",
+							"value": "103",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/getPaymentKeyPaymob",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"getPaymentKeyPaymob"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
